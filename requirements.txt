@@ -1,0 +1,9 @@
+# Minimal & optional packages for the demo
+numpy
+gymnasium
+torch
+stable-baselines3
+traci
+sumolib
+
+# Note: The evaluation script uses a mock simulator and does NOT require SUMO.

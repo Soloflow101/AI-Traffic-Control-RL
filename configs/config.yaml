@@ -1,0 +1,19 @@
+# configs/config.yaml
+simulator: mock
+episode_length: 3600
+time_step: 1
+
+# --- CRASH TEST VOLUME ---
+arrival_rate: 2.2       # High volume (AI must be sharp)
+ped_arrival_rate: 0.7
+discharge_rate: 4       
+
+# --- REAL-TIME SIGNAL TIMING ---
+env:
+  min_green: 10         # Minimum green to prevent flickering
+  yellow: 3             # Industry standard yellow duration
+  all_red: 2            # Clearance interval for safety
+
+reward:
+  alpha_vehicle: 1.0
+  beta_pedestrian: 3.0  # Keep high to show balanced "Intelligence"
